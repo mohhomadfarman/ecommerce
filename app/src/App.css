@@ -1,38 +1,338 @@
-.App {
-  text-align: center;
+*{
+  margin: 0px;
+  padding: 0px;
+}
+/* ----------------------------------------------------admin sidebar------------------------------------------------------------------ */
+
+.admin_sidebar{
+  position: sticky;
+  z-index: 1;
+  top: 0;
+}
+/* ----------------------------------------------------admin sidebar------------------------------------------------------------------ */
+
+/* ------------------------------------------------------------admin dashboard-------------------------------------------------------- */
+.admin_toppadding{
+  padding: 40px 30px;
+  margin-bottom: 15px !important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Admin_dashboard{
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 10px;
+  padding: 20px 40px;
+  
+}
+
+.Admin_lbutton{
+ margin-right: 20px;
+ padding: 10px 20px;
+ font-size: 20px;
+ color: #000 !important;
+ background-color: #F4F6F8 !important;
+ border: none !important;
+ box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.Admin_rbutton{
+  margin-right: 20px;
+  padding: 10px 20px;
+  font-size: 20px;
+  color: #fff;
+  background-color: #4EB529 !important;
+  border: none;
+ }
+
+.Admin_rbutton:hover{
+  background-color: #4EB529 !important ;
+}
+
+.Admin_lbutton:hover{
+  background-color: #F4F6F8;
+  color: #000;
+}
+
+.Admin_icons{
+  margin-right: 10px;
+  height: 40px;
+  width: 30px;
+}
+
+/* ------------------------------------------------------------admin dashboard-------------------------------------------------------- */
+/* ------------------------------------------------------------Admin graphs----------------------------------------------------------- */
+
+/* .line_chart{
+  max-width: 100% !important;
+  width: 850px !important;
+  height:900px !important;
+} */
+
+.paddin_bot{
+  padding: 0px 20px;
+}
+.recharts-wrapper{
+  width: 100% !important;
+}
+svg.recharts-surface{
+  width: 100% !important;
+}
+
+.recharts-legend-wrapper{
+  width: 100% !important;
+}
+
+/* ------------------------------------------------------------Admin graphs-------------------------------------------------------- */
+/* ------------------------------------------------------------Top selling products------------------------------------------------- */
+
+.top_selling_products{
+  max-height: 600px;
+  overflow: auto;
+
+}
+
+.top_selling_products div p{
+  height: 60px;
+  border-bottom: dashed #94A9BB ;
+  border-width: 1px;
+}
+.main{
+  padding: 30px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+h4{
+  color: #94A9BB;
+}
+
+.margin_bottom{
+  margin-bottom: 20px ;
+}
+
+.orders_icon{
+  background-color: #75c55848;
+  border-radius: 100%;
+  width: 60px;
+  height: 60px;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.total_order{
+  width: 25px;
+  height: 22px;
+  color: darkgreen !important;
 }
 
-.App-link {
-  color: #61dafb;
+.order_flex{
+  display: flex !important;
+  padding: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+p{
+  font-size: 20px;
+  font-weight: 600;
 }
+
+.card_border{
+  border: none;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+}
+/* ------------------------------------------------------------Top selling products------------------------------------------------- */
+
+/* -------------------------Recent Orders-------------------------- */
+
+.order_img{
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+}
+
+div p{
+  margin-bottom: 0px;
+  font-size: 15px;
+}
+
+.order_icon{
+  height: 30px;
+  width: 30px;
+}
+
+/* .Payment_background{
+  background-color: #E5F4DF !important;
+  border-radius: 100% !important;
+  width: 60px !important;
+  height: 30px !important;
+  color: #1b470b !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important; */
+/* } */
+
+.recent_orders{
+  padding: 20px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+}
+/* -------------------------Recent Orders-------------------------- */
+
+/* -----------------------------------------------------------------------------all procducts-------------------------------------------------------------------------------- */
+.searchbutton{
+  /* display: flex; */
+  justify-content: space-between;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 10px;
+  padding: 20px 40px;
+  /* display: flex; */
+  flex-direction: row;
+  
+}
+.all_product_search{
+  display: flex;
+  align-items: center;
+  width: 55%;
+}
+
+.allproduct_searchicon{
+  height: 30px;
+  width: 30px;
+}
+.search_bar.form-control{
+  width: 100% !important;
+}
+.btngroup{
+  display: flex;
+  justify-content: end;
+  width: 47%;
+}
+.form_control_or_btngroup{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.select_button{
+  margin-right: 20px;
+ padding: 10px 12px !important;
+ font-size: 15px !important;
+ line-height: 22px !important;
+ color: #000 !important;
+ background-color: #F4F6F8 !important;
+ border: none !important;
+ box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px !important;
+}
+.table-responsive{
+  overflow-x: unset !important;
+}
+
+.allproduct_table{
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+  padding: 20px 40px;
+  display: flex;
+  flex-direction: row;
+}
+
+.dropdown-toggle::after{
+  display: none !important;
+}
+
+.table_pageination{
+  display: flex;
+  justify-content: end;
+}
+@media (max-width:1200px) {
+  .btngroup{
+    width: 50%;
+  }
+  .all_product_search{
+    width: 45%;
+  }
+  
+}
+@media (max-width:1104px) {
+  .btngroup{
+    width: 60%;
+  }
+  
+}
+@media (max-width:814px) {
+  .form_control_or_btngroup{
+    display: block;
+  }
+  .all_product_search{
+    width: 100%;
+  }
+  .btngroup{
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+}
+/* -----------------------------------------------------------------------------all procducts-------------------------------------------------------------------------------- */
+/* -----------------------------------------------------------------------------side bar-------------------------------------------------------------------------------- */
+
+.sidebar_deco a{
+  text-decoration: none !important;
+  
+}
+
+svg.rs-sidenav-item-icon {
+  margin-right: 10px;
+  
+}
+
+/* -----------------------------------------------------------------------------side bar-------------------------------------------------------------------------------- */
+.Stockbasic_information{
+  border: none !important;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px !important;
+
+}
+.Stock_Information{
+  border-bottom: none !important;
+  background-color: #fff !important;
+}
+
+.left_addtoproduct{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.location{
+  padding: 10px;
+  border-color:#ECEEF1 ;
+  border-radius: 8px;
+}
+
+.icon_s{
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.rstock_inf{
+  padding: 20px;
+}
+
+.stock_icon{
+  margin-top: 20px !important;
+  color: #4EB529;
+  line-height: 22px;
+}
+
+.right_information{
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px !important;
+  border: none !important;
+}
+
+.location_search{
+  width: 100%;
+}
+
+.location_button{
+  width: 35%;
+}
+
+/* -----------------------------------------------------------------------------side bar-------------------------------------------------------------------------------- */
