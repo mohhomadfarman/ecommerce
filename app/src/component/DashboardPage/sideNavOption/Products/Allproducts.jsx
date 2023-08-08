@@ -57,7 +57,7 @@ function Allproducts(params) {
                         <Button className="select_button m-0" type="submit">   <AiOutlineSearch /> search</Button>
                     </div>
                 </div>
-                <Table responsive>
+                <Table responsive >
                     <thead>
                         <tr>
                             <th>S/L</th>

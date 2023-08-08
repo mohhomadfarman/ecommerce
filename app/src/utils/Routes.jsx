@@ -1,13 +1,15 @@
 
 import { getToken, getUserId } from "./auth";
-import Home from "../component/homepage/Home";
 import AdminLayout from "./AdminLayout";
-// import Maindashboard from "../component/DashboardPage/Dashboard";
-import Mainpagedash from "../component/DashboardPage/sideNavOption/Dashboard";
-import Allproducts from "../component/DashboardPage/sideNavOption/Allproducts";
+import Allproducts from "../component/DashboardPage/sideNavOption/Products/Allproducts";
 import StockFile from "../component/DashboardPage/sideNavOption/Stocks/Addstock";
 import Alllocation from "../component/DashboardPage/sideNavOption/Stocks/Alllocations";
 import Subscribeuser from "../component/DashboardPage/sideNavOption/Newsletter/Subscriber";
+import Allcategories from "../component/DashboardPage/sideNavOption/Products/Allcategories";
+import Allvariations from "../component/DashboardPage/sideNavOption/Products/Allvariations";
+import Allbrands from "../component/DashboardPage/sideNavOption/Products/Allbrands";
+import Allunit from "../component/DashboardPage/sideNavOption/Products/Allunit";
+import Alltaxes from "../component/DashboardPage/sideNavOption/Products/Alltaxes";
 
 const role = getUserId() ? getUserId()?.userRole : null;
 const isLoggedIn = getToken();
@@ -17,12 +19,15 @@ const protects = {
             path: "/",
             element: <AdminLayout />,
             children: [
-                { path: "/", element: <Home /> },
-                { path: "/dashboard", element: <Mainpagedash /> },
                 { path: "/allproduct", element: <Allproducts /> },
                 { path: "/Addstock", element: <StockFile /> },
                 { path: "/Allloation", element: <Alllocation /> },
                 { path: "/Subscriber", element: <Subscribeuser /> },
+                { path: "/Allcategories", element: <Allcategories /> },
+                { path: "/Allvariations", element: <Allvariations /> },
+                { path: "/Allbrands", element: <Allbrands /> },
+                { path: "/Allunit", element: <Allunit /> },
+                { path: "/Alltaxes", element: <Alltaxes /> },
                 { path: "*", element: "NO PAGE FOUND" },
             ],
         },

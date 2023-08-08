@@ -2,6 +2,51 @@
   margin: 0px;
   padding: 0px;
 }
+
+/* navbar */
+
+.Navsearch_bar{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-left: 30px;
+}
+
+.navsearch{
+  border: none !important;
+}
+
+.adminnavbar{
+  display: flex;
+  flex-direction: row;
+  padding: 30px 0px;
+  border-bottom: 1px inset ;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.profile_img{
+  width: 40px;
+  height: 40px;
+  border-radius: 100px;
+
+}
+
+.Navbarcons{
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-left: 30px;
+}
+
+.navicons{
+  width: 30px;
+  height: 40px;
+
+}
+/* navbar */
 /* ----------------------------------------------------admin sidebar------------------------------------------------------------------ */
 
 .admin_sidebar{
@@ -63,12 +108,6 @@
 /* ------------------------------------------------------------admin dashboard-------------------------------------------------------- */
 /* ------------------------------------------------------------Admin graphs----------------------------------------------------------- */
 
-/* .line_chart{
-  max-width: 100% !important;
-  width: 850px !important;
-  height:900px !important;
-} */
-
 .paddin_bot{
   padding: 0px 20px;
 }
@@ -97,10 +136,7 @@ svg.recharts-surface{
   border-bottom: dashed #94A9BB ;
   border-width: 1px;
 }
-.main{
-  padding: 30px;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-}
+
 h4{
   color: #94A9BB;
 }
@@ -159,17 +195,6 @@ div p{
   width: 30px;
 }
 
-/* .Payment_background{
-  background-color: #E5F4DF !important;
-  border-radius: 100% !important;
-  width: 60px !important;
-  height: 30px !important;
-  color: #1b470b !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important; */
-/* } */
-
 .recent_orders{
   padding: 20px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
@@ -179,12 +204,10 @@ div p{
 
 /* -----------------------------------------------------------------------------all procducts-------------------------------------------------------------------------------- */
 .searchbutton{
-  /* display: flex; */
   justify-content: space-between;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   border-radius: 10px;
   padding: 20px 40px;
-  /* display: flex; */
   flex-direction: row;
   
 }
@@ -192,6 +215,7 @@ div p{
   display: flex;
   align-items: center;
   width: 55%;
+  
 }
 
 .allproduct_searchicon{
@@ -201,6 +225,11 @@ div p{
 .search_bar.form-control{
   width: 100% !important;
 }
+
+.search_bar{
+  padding: 11px !important;
+}
+  
 .btngroup{
   display: flex;
   justify-content: end;
@@ -210,10 +239,12 @@ div p{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 10px;
+  background-color: #F9F9FA;
 }
 .select_button{
   margin-right: 20px;
- padding: 10px 12px !important;
+ padding: 15px 30px !important;
  font-size: 15px !important;
  line-height: 22px !important;
  color: #000 !important;
@@ -336,3 +367,103 @@ svg.rs-sidenav-item-icon {
 }
 
 /* -----------------------------------------------------------------------------side bar-------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------alllocation------------------------------------------------------------------------------- */
+
+.alllocationtable tr th{
+   padding: 20px;
+}
+.alllocationtable tr td{
+   padding: 20px;
+}
+/* -------------------------------------------------------------------------alllocation------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------all categories------------------------------------------------------------------------------- */
+
+
+.alllocation_button{
+display: flex;
+justify-content: start;
+margin-left: 20px;
+}
+
+.allvariation_search{
+  width: 100%;
+}
+
+.variation_button{
+  margin-left: 20px;
+  display: flex;
+  justify-content: start;
+}
+.variation_text{
+  position: relative;
+}
+.variation_text::before{
+  position: absolute;
+  content: "";
+  left: -28px;
+  width: 15px;
+  height: 15px;
+  background-color: gray;
+ outline: 2px solid green;
+ outline-offset: 5px;
+  border-radius: 100%;  
+  top: 6px;
+}
+
+.var_edit{
+  margin-top: 5px;
+  margin-left: 25px;
+}
+
+.var_edit::before{
+  content: "";
+  position: absolute;
+  left: 20px;
+  top: 62px;
+  width: 2px;
+  height: 40%;
+  background: #dfe3e8;
+}
+
+.variation_text{
+  margin-top: 20px; 
+  margin-bottom: 20px;
+}
+
+.right_variation{
+  position: sticky !important;
+  z-index: index 9 !important;
+  top: 0 !important;
+}
+
+/* -------------------------------------------------------------------------all categories------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------brand ------------------------------------------------------------------------------- */
+
+.brand_image{
+  border: 1px dashed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 120px;
+  flex-direction: column;
+}
+
+.brand_img_icon{
+  width: 70px;
+  height: 70px;
+  color: #94A9BB;
+}
+
+.Addnewpeoduct{
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px !important;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+.Brandsave_button{
+  background-color: #4EB529 !important;
+  padding: 10px 30px !important;
+  margin-bottom: 10px;
+  font-size: 19px !important;
+}
+/* -------------------------------------------------------------------------brand------------------------------------------------------------------------------- */
