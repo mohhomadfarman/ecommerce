@@ -43,11 +43,11 @@ const SidebarFun = () => {
                                 icon={<MdProductionQuantityLimits />}
                             >
                                 <Nav.Item eventKey="2-1">  <Link to={"/allproduct"}> All Products</Link> </Nav.Item>
-                                <Nav.Item eventKey="2-2">All Categories</Nav.Item>
-                                <Nav.Item eventKey="2-3">All Variations</Nav.Item>
-                                <Nav.Item eventKey="2-4">All Brands</Nav.Item>
-                                <Nav.Item eventKey="2-5">All Units</Nav.Item>
-                                <Nav.Item eventKey="2-6">All Taxes</Nav.Item>
+                                <Nav.Item eventKey="2-2"> <Link to={"/Allcategories"}> All Categories</Link></Nav.Item>
+                                <Nav.Item eventKey="2-3"><Link to={"/Allvariations"}> All Variations</Link></Nav.Item>
+                                <Nav.Item eventKey="2-4"><Link to={"/Allbrands"}> All Brands</Link></Nav.Item>
+                                <Nav.Item eventKey="2-5"><Link to={"/Allunit"}> All Units</Link></Nav.Item>
+                                <Nav.Item eventKey="2-6"><Link to={"/Alltaxes"}> All Taxes</Link></Nav.Item>
                             </Nav.Menu>
                             <Nav.Menu
                                 eventKey="3"
@@ -56,7 +56,7 @@ const SidebarFun = () => {
                             ></Nav.Menu>
                             <Nav.Menu eventKey="4" title="Order" icon={<HiDocument />} />{" "}
                             <Nav.Menu eventKey="5" title="Stock" icon={<GoDatabase />}>
-                                <Nav.Item eventKey="5-1"><Link to={"/Addstock"}>Add Stock</Link></Nav.Item>
+                                <Nav.Item eventKey="5-1"><Link to={"/Addstock"} /> Add Stock  </Nav.Item>
                                 <Nav.Item eventKey="5-2"><Link to={"/Allloation"}> All Location</Link></Nav.Item>
                             </Nav.Menu>{" "}
                             <Nav.Menu eventKey="6" title="Refunds" icon={<BsArrow90DegLeft />}>

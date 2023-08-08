@@ -7,7 +7,6 @@ import { AiOutlinePlus, AiOutlineSearch } from "react-icons/ai";
 import Form from "react-bootstrap/Form";
 import Dropdown from "react-bootstrap/Dropdown";
 import { Table } from "react-bootstrap";
-import BootstrapSwitchButton from "bootstrap-switch-button-react";
 import { FiSearch } from "react-icons/fi";
 import { BsThreeDotsVertical } from "react-icons/bs";
 
@@ -49,10 +48,10 @@ function Alllocation(params) {
                             <Button className="select_button m-0" type="submit">   <AiOutlineSearch /> search</Button>
                         </div>
                     </div>
-                    <Table responsive="md" >
-                        <thead>
-                            <tr>
-                                <th>#</th>
+                    <Table   responsive="md" >
+                        <thead className="alllocationtable">
+                            <tr >
+                                <th>S/L</th>
                                 <th>Name</th>
                                 <th>Address</th>
                                 <th>Default</th>
@@ -60,28 +59,28 @@ function Alllocation(params) {
                                 <th>Action</th>
                             </tr>
                         </thead>
-                        <tbody>
-                            <tr>
+                        <tbody className="alllocationtable">
+                            <tr >
                                 <td>1</td>
                                 <td>Location Two</td>
                                 <td>Location two address</td>
                                 <td>
-                                <Form>
-                                    <Form.Check // prettier-ignore
-                                        type="switch"
-                                        id="custom-switch"
-                                    />
+                                    <Form>
+                                        <Form.Check // prettier-ignore
+                                            type="switch"
+                                            id="custom-switch"
+                                        />
 
-                                </Form>
+                                    </Form>
                                 </td>
                                 <td>
                                     {" "}
                                     <Form>
-                                    <Form.Check // prettier-ignore
-                                        type="switch"
-                                        id="custom-switch"
-                                    />
-                                </Form>
+                                        <Form.Check // prettier-ignore
+                                            type="switch"
+                                            id="custom-switch"
+                                        />
+                                    </Form>
                                 </td>
                                 <td>
                                     <BsThreeDotsVertical />
@@ -94,20 +93,20 @@ function Alllocation(params) {
                                 <td>
                                     {" "}
                                     <Form>
-                                    <Form.Check // prettier-ignore
-                                        type="switch"
-                                        id="custom-switch"
-                                    />
-                                </Form>
+                                        <Form.Check // prettier-ignore
+                                            type="switch"
+                                            id="custom-switch"
+                                        />
+                                    </Form>
                                 </td>
                                 <td>
                                     {" "}
                                     <Form>
-                                    <Form.Check // prettier-ignore
-                                        type="switch"
-                                        id="custom-switch"
-                                    />
-                                </Form>
+                                        <Form.Check // prettier-ignore
+                                            type="switch"
+                                            id="custom-switch"
+                                        />
+                                    </Form>
                                 </td>
                                 <td>
                                     {" "}
@@ -115,7 +114,7 @@ function Alllocation(params) {
                                 </td>
                             </tr>
                             <tr>
-                                
+
                             </tr>
                         </tbody>
                     </Table>
