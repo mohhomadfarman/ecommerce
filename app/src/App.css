@@ -1,38 +1,469 @@
-.App {
-  text-align: center;
+*{
+  margin: 0px;
+  padding: 0px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/* navbar */
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Navsearch_bar{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-left: 30px;
 }
 
-.App-link {
-  color: #61dafb;
+.navsearch{
+  border: none !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.adminnavbar{
+  display: flex;
+  flex-direction: row;
+  padding: 30px 0px;
+  border-bottom: 1px inset ;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
+
+.profile_img{
+  width: 40px;
+  height: 40px;
+  border-radius: 100px;
+
+}
+
+.Navbarcons{
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-left: 30px;
+}
+
+.navicons{
+  width: 30px;
+  height: 40px;
+
+}
+/* navbar */
+/* ----------------------------------------------------admin sidebar------------------------------------------------------------------ */
+
+.admin_sidebar{
+  position: sticky;
+  z-index: 1;
+  top: 0;
+}
+/* ----------------------------------------------------admin sidebar------------------------------------------------------------------ */
+
+/* ------------------------------------------------------------admin dashboard-------------------------------------------------------- */
+.admin_toppadding{
+  padding: 40px 30px;
+  margin-bottom: 15px !important;
+}
+
+.Admin_dashboard{
+  display: flex;
+  justify-content: space-between;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 10px;
+  padding: 20px 40px;
+  
+}
+
+.Admin_lbutton{
+ margin-right: 20px;
+ padding: 10px 20px;
+ font-size: 20px;
+ color: #000 !important;
+ background-color: #F4F6F8 !important;
+ border: none !important;
+ box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.Admin_rbutton{
+  margin-right: 20px;
+  padding: 10px 20px;
+  font-size: 20px;
+  color: #fff;
+  background-color: #4EB529 !important;
+  border: none;
+ }
+
+.Admin_rbutton:hover{
+  background-color: #4EB529 !important ;
+}
+
+.Admin_lbutton:hover{
+  background-color: #F4F6F8;
+  color: #000;
+}
+
+.Admin_icons{
+  margin-right: 10px;
+  height: 40px;
+  width: 30px;
+}
+
+/* ------------------------------------------------------------admin dashboard-------------------------------------------------------- */
+/* ------------------------------------------------------------Admin graphs----------------------------------------------------------- */
+
+.paddin_bot{
+  padding: 0px 20px;
+}
+.recharts-wrapper{
+  width: 100% !important;
+}
+svg.recharts-surface{
+  width: 100% !important;
+}
+
+.recharts-legend-wrapper{
+  width: 100% !important;
+}
+
+/* ------------------------------------------------------------Admin graphs-------------------------------------------------------- */
+/* ------------------------------------------------------------Top selling products------------------------------------------------- */
+
+.top_selling_products{
+  max-height: 600px;
+  overflow: auto;
+
+}
+
+.top_selling_products div p{
+  height: 60px;
+  border-bottom: dashed #94A9BB ;
+  border-width: 1px;
+}
+
+h4{
+  color: #94A9BB;
+}
+
+.margin_bottom{
+  margin-bottom: 20px ;
+}
+
+.orders_icon{
+  background-color: #75c55848;
+  border-radius: 100%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.total_order{
+  width: 25px;
+  height: 22px;
+  color: darkgreen !important;
+}
+
+.order_flex{
+  display: flex !important;
+  padding: 20px;
+}
+
+p{
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.card_border{
+  border: none;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+}
+/* ------------------------------------------------------------Top selling products------------------------------------------------- */
+
+/* -------------------------Recent Orders-------------------------- */
+
+.order_img{
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+}
+
+div p{
+  margin-bottom: 0px;
+  font-size: 15px;
+}
+
+.order_icon{
+  height: 30px;
+  width: 30px;
+}
+
+.recent_orders{
+  padding: 20px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+}
+/* -------------------------Recent Orders-------------------------- */
+
+/* -----------------------------------------------------------------------------all procducts-------------------------------------------------------------------------------- */
+.searchbutton{
+  justify-content: space-between;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 10px;
+  padding: 20px 40px;
+  flex-direction: row;
+  
+}
+.all_product_search{
+  display: flex;
+  align-items: center;
+  width: 55%;
+  
+}
+
+.allproduct_searchicon{
+  height: 30px;
+  width: 30px;
+}
+.search_bar.form-control{
+  width: 100% !important;
+}
+
+.search_bar{
+  padding: 11px !important;
+}
+  
+.btngroup{
+  display: flex;
+  justify-content: end;
+  width: 47%;
+}
+.form_control_or_btngroup{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #F9F9FA;
+}
+.select_button{
+  margin-right: 20px;
+ padding: 15px 30px !important;
+ font-size: 15px !important;
+ line-height: 22px !important;
+ color: #000 !important;
+ background-color: #F4F6F8 !important;
+ border: none !important;
+ box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px !important;
+}
+.table-responsive{
+  overflow-x: unset !important;
+}
+
+.allproduct_table{
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+  padding: 20px 40px;
+  display: flex;
+  flex-direction: row;
+}
+
+.dropdown-toggle::after{
+  display: none !important;
+}
+
+.table_pageination{
+  display: flex;
+  justify-content: end;
+}
+@media (max-width:1200px) {
+  .btngroup{
+    width: 50%;
+  }
+  .all_product_search{
+    width: 45%;
+  }
+  
+}
+@media (max-width:1104px) {
+  .btngroup{
+    width: 60%;
+  }
+  
+}
+@media (max-width:814px) {
+  .form_control_or_btngroup{
+    display: block;
+  }
+  .all_product_search{
+    width: 100%;
+  }
+  .btngroup{
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+}
+/* -----------------------------------------------------------------------------all procducts-------------------------------------------------------------------------------- */
+/* -----------------------------------------------------------------------------side bar-------------------------------------------------------------------------------- */
+
+.sidebar_deco a{
+  text-decoration: none !important;
+  
+}
+
+svg.rs-sidenav-item-icon {
+  margin-right: 10px;
+  
+}
+
+/* -----------------------------------------------------------------------------side bar-------------------------------------------------------------------------------- */
+.Stockbasic_information{
+  border: none !important;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px !important;
+
+}
+.Stock_Information{
+  border-bottom: none !important;
+  background-color: #fff !important;
+}
+
+.left_addtoproduct{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.location{
+  padding: 10px;
+  border-color:#ECEEF1 ;
+  border-radius: 8px;
+}
+
+.icon_s{
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.rstock_inf{
+  padding: 20px;
+}
+
+.stock_icon{
+  margin-top: 20px !important;
+  color: #4EB529;
+  line-height: 22px;
+}
+
+.right_information{
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px !important;
+  border: none !important;
+}
+
+.location_search{
+  width: 100%;
+}
+
+.location_button{
+  width: 35%;
+}
+
+/* -----------------------------------------------------------------------------side bar-------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------alllocation------------------------------------------------------------------------------- */
+
+.alllocationtable tr th{
+   padding: 20px;
+}
+.alllocationtable tr td{
+   padding: 20px;
+}
+/* -------------------------------------------------------------------------alllocation------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------all categories------------------------------------------------------------------------------- */
+
+
+.alllocation_button{
+display: flex;
+justify-content: start;
+margin-left: 20px;
+}
+
+.allvariation_search{
+  width: 100%;
+}
+
+.variation_button{
+  margin-left: 20px;
+  display: flex;
+  justify-content: start;
+}
+.variation_text{
+  position: relative;
+}
+.variation_text::before{
+  position: absolute;
+  content: "";
+  left: -28px;
+  width: 15px;
+  height: 15px;
+  background-color: gray;
+ outline: 2px solid green;
+ outline-offset: 5px;
+  border-radius: 100%;  
+  top: 6px;
+}
+
+.var_edit{
+  margin-top: 5px;
+  margin-left: 25px;
+}
+
+.var_edit::before{
+  content: "";
+  position: absolute;
+  left: 20px;
+  top: 62px;
+  width: 2px;
+  height: 40%;
+  background: #dfe3e8;
+}
+
+.variation_text{
+  margin-top: 20px; 
+  margin-bottom: 20px;
+}
+
+.right_variation{
+  position: sticky !important;
+  z-index: index 9 !important;
+  top: 0 !important;
+}
+
+/* -------------------------------------------------------------------------all categories------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------brand ------------------------------------------------------------------------------- */
+
+.brand_image{
+  border: 1px dashed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 120px;
+  flex-direction: column;
+}
+
+.brand_img_icon{
+  width: 70px;
+  height: 70px;
+  color: #94A9BB;
+}
+
+.Addnewpeoduct{
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px !important;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+.Brandsave_button{
+  background-color: #4EB529 !important;
+  padding: 10px 30px !important;
+  margin-bottom: 10px;
+  font-size: 19px !important;
+}
+/* -------------------------------------------------------------------------brand------------------------------------------------------------------------------- */
